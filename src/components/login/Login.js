@@ -1,5 +1,6 @@
-import React, {
-  Component,
+import React, { Component } from 'react';
+
+import {
   View,
   Text,
   Image,
@@ -77,10 +78,10 @@ export default class Login extends Component {
           </View>
         </Image>
         <View style={styles.emailInput}>
-          <TextInput style={styles.textInput} placeholder='email' keyboardType='email-address'/>
+          <TextInput style={styles.textInput} placeholder='Email' keyboardType='email-address'/>
         </View>
         <View style={styles.passwordInput}>
-          <TextInput style={styles.textInput} placeholder='password' maxLength={16}/>
+          <TextInput style={styles.textInput} placeholder='Password' maxLength={16}/>
         </View>
         <TouchableHighlight style={styles.button}>
           <Text style={styles.buttonText}>SIGN IN</Text>
