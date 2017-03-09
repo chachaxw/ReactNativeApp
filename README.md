@@ -1,24 +1,24 @@
 # React Native App
+> This is a react native app, it's really awesome that I can try this project.
 
-This is a react native app, it's really amazing that I can try this project.
+## Run ios
+Open ios/AwesomeProject.xcodeproj project, and press start button or react-native run-ios
 
-## 运行 ios App
-用XCode打开ios/AwesomeProject.xcodeproj并点击Run按钮。
-或者react－native run-ios
-
-## 运行安卓 App
+## Run Android
 react-native run-android
+
+## Screen Shot
+![Screen Shot](http://7xqacx.com1.z0.glb.clouddn.com/livo.png)
 
 ## Project Structure
 ```
 src
-├── components/                    # Components
-│   └── app.config                 # App config
-│   │── app.component              # App base component
-│   │── app.html                   # App component template
-│   │── app.module                 # App component module
-│   │── app.scss                   # App style
-│   │── main                       # App bootstrap module
+├── components/                    # Components folder
+│   └── common                     # common components
+│   │── logn                       # App login page
+│   │── start                      # App start page
 │   └── ...
+└── index.ios.js                   # ios entry js
+└── index.android.js               # android entry js
 
 ```
