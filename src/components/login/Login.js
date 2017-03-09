@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import {
   View,
   Text,
@@ -7,7 +6,8 @@ import {
   TabBarIOS,
   TextInput,
   TouchableHighlight,
-  StyleSheet
+  StyleSheet,
+  PixelRatio
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     marginTop: 150,
     flexDirection: 'row',
     borderTopWidth: 1,
+    alignItems: 'center',
     borderTopColor: 'rgba(255,255,255,0.2)'
   },
   textInput: {
@@ -38,7 +39,7 @@ const styles = StyleSheet.create({
   emailInput: {
     width: 226,
     height: 40,
-    marginTop: 47,
+    marginTop: 45,
     borderBottomWidth: 1,
     borderColor: '#E2E2E2'
   },
@@ -52,7 +53,7 @@ const styles = StyleSheet.create({
   button: {
     width: 112,
     height: 45,
-    marginTop: 37,
+    marginTop: 32,
     borderRadius: 45,
     backgroundColor: '#FF8162',
   },
@@ -60,21 +61,28 @@ const styles = StyleSheet.create({
     backgroundColor: 'hsla(360,100%,100%,0)',
     color: 'white',
     marginTop: 15,
-    textAlign: 'center'
+    textAlign: 'center',
   }
 });
 
+// console.log(PixelRatio.get());
+
 export default class Login extends Component {
+
+  handleLogin() {
+    alert('Login');
+  }
+
   render() {
     return (
       <View style={{alignItems: 'center', flex: 1}}>
-        <Image source={require('../../images/login-img.png')} style={styles.img} >
+        <Image source={require('../../images/login-img.png')} style={styles.img}>
           <Text style={styles.titleText}>
             Livo
           </Text>
           <View style={styles.tab}>
-            <Text style={{flex: 0.5, lineHeight: 38, textAlign: 'center', color: 'hsla(360,100%,100%,0.4)', backgroundColor: 'transparent'}}>SIGN UP</Text>
-            <Text style={{flex: 0.5, lineHeight: 38, textAlign: 'center', color: 'hsla(360,100%,100%,1)', backgroundColor: 'transparent'}}>SIGN IN</Text>
+            <Text style={{flex: 0.5, textAlign: 'center', color: 'hsla(360,100%,100%,0.4)', backgroundColor: 'transparent'}}>SIGN UP</Text>
+            <Text style={{flex: 0.5, textAlign: 'center', color: 'hsla(360,100%,100%,1)', backgroundColor: 'transparent'}}>SIGN IN</Text>
           </View>
         </Image>
         <View style={styles.emailInput}>
@@ -84,7 +92,7 @@ export default class Login extends Component {
           <TextInput style={styles.textInput} placeholder='Password' maxLength={16}/>
         </View>
         <TouchableHighlight style={styles.button}>
-          <Text style={styles.buttonText}>SIGN IN</Text>
+          <Text style={styles.buttonText}>Sign in</Text>
         </TouchableHighlight>
       </View>
     )
