@@ -30,6 +30,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderTopColor: 'rgba(255,255,255,0.2)'
   },
+  tabText: {
+    flex: 0.5,
+    textAlign: 'center',
+    color: 'hsla(360,100%,100%,0.4)',
+    backgroundColor: 'transparent'
+  },
   textInput: {
     height: 30,
     marginTop: 5,
@@ -37,14 +43,14 @@ const styles = StyleSheet.create({
     color: '#595968'
   },
   emailInput: {
-    width: 226,
+    width: 220,
     height: 40,
     marginTop: 45,
     borderBottomWidth: 1,
     borderColor: '#E2E2E2'
   },
   passwordInput: {
-    width: 197,
+    width: 180,
     height: 40,
     marginTop: 10,
     borderBottomWidth: 1,
@@ -65,12 +71,14 @@ const styles = StyleSheet.create({
   }
 });
 
-// console.log(PixelRatio.get());
-
 export default class Login extends Component {
 
   handleLogin() {
     alert('Login');
+  }
+
+  switchTab() {
+    console.log("Switch Tab");
   }
 
   render() {
@@ -81,8 +89,8 @@ export default class Login extends Component {
             Livo
           </Text>
           <View style={styles.tab}>
-            <Text style={{flex: 0.5, textAlign: 'center', color: 'hsla(360,100%,100%,0.4)', backgroundColor: 'transparent'}}>SIGN UP</Text>
-            <Text style={{flex: 0.5, textAlign: 'center', color: 'hsla(360,100%,100%,1)', backgroundColor: 'transparent'}}>SIGN IN</Text>
+            <Text style={styles.tabText}>SIGN UP</Text>
+            <Text style={styles.tabText}>SIGN IN</Text>
           </View>
         </Image>
         <View style={styles.emailInput}>
