@@ -5,9 +5,9 @@ import {
   Image,
   TabBarIOS,
   TextInput,
-  TouchableHighlight,
   StyleSheet,
-  PixelRatio
+  PixelRatio,
+  TouchableHighlight,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent'
   },
   tab: {
+    height: 56,
     marginTop: 150,
     flexDirection: 'row',
     borderTopWidth: 1,
@@ -31,10 +32,13 @@ const styles = StyleSheet.create({
     borderTopColor: 'rgba(255,255,255,0.2)'
   },
   tabText: {
-    flex: 0.5,
+    flex: 1,
     textAlign: 'center',
     color: 'hsla(360,100%,100%,0.4)',
     backgroundColor: 'transparent'
+  },
+  tabActive: {
+    color: '#fff'
   },
   textInput: {
     height: 30,
@@ -73,11 +77,15 @@ const styles = StyleSheet.create({
 
 export default class Login extends Component {
 
-  handleLogin() {
+  state = {
+    active: 1,
+  }
+
+  handleLogin = () => {
     alert('Login');
   }
 
-  switchTab() {
+  switchTab = () => {
     console.log("Switch Tab");
   }
 
@@ -85,12 +93,10 @@ export default class Login extends Component {
     return (
       <View style={{alignItems: 'center', flex: 1}}>
         <Image source={require('../../images/login-img.png')} style={styles.img}>
-          <Text style={styles.titleText}>
-            Livo
-          </Text>
+          <Text style={styles.titleText}>Livo</Text>
           <View style={styles.tab}>
-            <Text style={styles.tabText}>SIGN UP</Text>
-            <Text style={styles.tabText}>SIGN IN</Text>
+            <Text style={[styles.tabText, this.state.active === 0 ? styles.tabActive : '']}>SIGN UP</Text>
+            <Text style={[styles.tabText, this.state.active === 1 ? styles.tabActive : '']}>SIGN IN</Text>
           </View>
         </Image>
         <View style={styles.emailInput}>
@@ -99,7 +105,7 @@ export default class Login extends Component {
         <View style={styles.passwordInput}>
           <TextInput style={styles.textInput} placeholder='Password' maxLength={16}/>
         </View>
-        <TouchableHighlight style={styles.button}>
+        <TouchableHighlight style={styles.button} underlayColor={'lightsalmon'} onPress={this.handleLogin}>
           <Text style={styles.buttonText}>Sign in</Text>
         </TouchableHighlight>
       </View>
