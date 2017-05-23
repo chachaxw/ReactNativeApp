@@ -12,7 +12,6 @@ import {
   View
 } from 'react-native';
 
-import StartPage from './src/components/start/Start';
 import Login from './src/components/login/Login';
 
 class ReactNativeApp extends Component {

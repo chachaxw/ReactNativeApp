@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     color: 'white',
     backgroundColor: 'transparent'
   },
-  tab: {
+  tabWrapper: {
     height: 56,
     marginTop: 150,
     flexDirection: 'row',
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
   },
   tabText: {
     flex: 1,
+    lineHeight: 56,
     textAlign: 'center',
     color: 'hsla(360,100%,100%,0.4)',
     backgroundColor: 'transparent'
@@ -94,9 +95,13 @@ export default class Login extends Component {
       <View style={{alignItems: 'center', flex: 1}}>
         <Image source={require('../../images/login-img.png')} style={styles.img}>
           <Text style={styles.titleText}>Livo</Text>
-          <View style={styles.tab}>
-            <Text style={[styles.tabText, this.state.active === 0 ? styles.tabActive : '']}>SIGN UP</Text>
-            <Text style={[styles.tabText, this.state.active === 1 ? styles.tabActive : '']}>SIGN IN</Text>
+          <View style={styles.tabWrapper}>
+            <TouchableHighlight style={styles.tabText}>
+              <Text style={[styles.tabText, this.state.active === 0 ? styles.tabActive : '']}>SIGN UP</Text>
+            </TouchableHighlight>
+            <TouchableHighlight style={styles.tabText}>
+              <Text style={[styles.tabText, this.state.active === 1 ? styles.tabActive : '']}>SIGN IN</Text>
+            </TouchableHighlight>
           </View>
         </Image>
         <View style={styles.emailInput}>
