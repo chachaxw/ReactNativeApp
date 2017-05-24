@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 
 import Login from './src/components/login/Login';
+import ChatList from './src/components/chat/ChatList';
 
 class ReactNativeApp extends Component {
   render() {

@@ -6,14 +6,14 @@ import {
   TabBarIOS,
   TextInput,
   StyleSheet,
-  PixelRatio,
+  Dimensions,
   TouchableHighlight,
 } from 'react-native';
 
 const styles = StyleSheet.create({
   img: {
-    width: 375,
-    height: 375
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').width
   },
   titleText: {
     fontSize: 80,
