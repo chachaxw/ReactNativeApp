@@ -31,8 +31,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderTopColor: 'rgba(255,255,255,0.2)'
   },
-  tabText: {
+  tabItem: {
     flex: 1,
+  },
+  tabText: {
     lineHeight: 56,
     textAlign: 'center',
     color: 'hsla(360,100%,100%,0.4)',
@@ -79,38 +81,61 @@ const styles = StyleSheet.create({
 export default class Login extends Component {
 
   state = {
-    active: 1,
+    active: 0,
   }
 
-  handleLogin = () => {
-    alert('Login');
+  switchTab = (index) => {
+    console.log(index);
+    this.setState({ active: index });
   }
 
-  switchTab = () => {
-    console.log("Switch Tab");
+  handleSignIn = () => {
+    alert('Sign In');
+  }
+
+  handleSignUp= () => {
+    alert('Sign Up');
   }
 
   render() {
+
     return (
       <View style={{alignItems: 'center', flex: 1}}>
-        <Image source={require('../../images/login-img.png')} style={styles.img}>
+        <Image
+          source={require('../../images/login-img.png')}
+          style={styles.img}>
           <Text style={styles.titleText}>Livo</Text>
           <View style={styles.tabWrapper}>
-            <TouchableHighlight style={styles.tabText}>
+            <TouchableHighlight
+              style={styles.tabItem}
+              underlayColor='transparent'
+              onPress={() => this.switchTab(0)}>
               <Text style={[styles.tabText, this.state.active === 0 ? styles.tabActive : '']}>SIGN UP</Text>
             </TouchableHighlight>
-            <TouchableHighlight style={styles.tabText}>
+            <TouchableHighlight
+              style={styles.tabItem}
+              underlayColor='transparent'
+              onPress={() => this.switchTab(1)}>
               <Text style={[styles.tabText, this.state.active === 1 ? styles.tabActive : '']}>SIGN IN</Text>
             </TouchableHighlight>
           </View>
         </Image>
         <View style={styles.emailInput}>
-          <TextInput style={styles.textInput} placeholder='Email' keyboardType='email-address'/>
+          <TextInput
+            style={styles.textInput}
+            placeholder='Email'
+            keyboardType='email-address'/>
         </View>
         <View style={styles.passwordInput}>
-          <TextInput style={styles.textInput} placeholder='Password' maxLength={16}/>
+          <TextInput
+            style={styles.textInput}
+            placeholder='Password'
+            maxLength={16}/>
         </View>
-        <TouchableHighlight style={styles.button} underlayColor={'lightsalmon'} onPress={this.handleLogin}>
+        <TouchableHighlight
+          style={styles.button}
+          underlayColor={'lightsalmon'}
+          onPress={this.handleSignIn}>
           <Text style={styles.buttonText}>Sign in</Text>
         </TouchableHighlight>
       </View>
