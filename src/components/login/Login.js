@@ -12,20 +12,22 @@ import {
 
 const styles = StyleSheet.create({
   img: {
+    position: 'relative',
     width: Dimensions.get('window').width,
     height: Dimensions.get('window').width
   },
   titleText: {
     fontSize: 80,
     marginTop: 72,
-    marginLeft: 20,
     textAlign: 'center',
     color: 'white',
     backgroundColor: 'transparent'
   },
   tabWrapper: {
+    position: 'absolute',
+    width: '100%',
     height: 56,
-    marginTop: 150,
+    bottom: 0,
     flexDirection: 'row',
     borderTopWidth: 1,
     alignItems: 'center',
@@ -81,7 +83,7 @@ const styles = StyleSheet.create({
 export default class Login extends Component {
 
   state = {
-    active: 0,
+    active: 1,
   }
 
   switchTab = (index) => {
