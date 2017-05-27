@@ -14,11 +14,12 @@ import {
 
 import Login from './src/components/login/Login';
 import ChatList from './src/components/chat/ChatList';
+import LandingPage from './src/components/landing/LandingPage';
 
 class ReactNativeApp extends Component {
   render() {
     return (
-      <Login />
+      <LandingPage />
     );
   }
 };
