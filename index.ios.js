@@ -19,7 +19,7 @@ import LandingPage from './src/components/landing/LandingPage';
 class ReactNativeApp extends Component {
   render() {
     return (
-      <LandingPage />
+      <ChatList />
     );
   }
 };

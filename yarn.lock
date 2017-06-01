@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+"@expo/react-native-action-sheet@0.3.0":
+  version "0.3.0"
+  resolved "http://registry.npm.taobao.org/@expo/react-native-action-sheet/download/@expo/react-native-action-sheet-0.3.0.tgz#b4da88fa0e506bdf57a31ac87999fea30825d6a7"
+  dependencies:
+    hoist-non-react-statics "^1.2.0"
+
 absolute-path@^0.0.0:
   version "0.0.0"
   resolved "http://registry.npm.taobao.org/absolute-path/download/absolute-path-0.0.0.tgz#a78762fbdadfb5297be99b15d35a785b2f095bf7"
@@ -914,6 +920,10 @@ chalk@^1.0.0, chalk@^1.1.0, chalk@^1.1.1:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
+charenc@~0.0.1:
+  version "0.0.2"
+  resolved "http://registry.npm.taobao.org/charenc/download/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
+
 cli-cursor@^1.0.1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/cli-cursor/download/cli-cursor-1.0.2.tgz#64da3f7d56a54412e59794bd62dc35295e8f2987"
@@ -1083,6 +1093,10 @@ cross-spawn@^3.0.1:
   dependencies:
     lru-cache "^4.0.1"
     which "^1.2.9"
+
+crypt@~0.0.1:
+  version "0.0.2"
+  resolved "http://registry.npm.taobao.org/crypt/download/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
 
 cryptiles@2.x.x:
   version "2.0.5"
@@ -1558,6 +1572,10 @@ hoek@2.x.x:
   version "2.16.3"
   resolved "http://registry.npm.taobao.org/hoek/download/hoek-2.16.3.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
 
+hoist-non-react-statics@^1.2.0:
+  version "1.2.0"
+  resolved "http://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
+
 home-or-tmp@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/home-or-tmp/download/home-or-tmp-2.0.0.tgz#e36c3f2d2cae7d746a857e38d18d5f32a7882db8"
@@ -1651,7 +1669,7 @@ is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "http://registry.npm.taobao.org/is-arrayish/download/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
 
-is-buffer@^1.0.2:
+is-buffer@^1.0.2, is-buffer@~1.1.1:
   version "1.1.4"
   resolved "http://registry.npm.taobao.org/is-buffer/download/is-buffer-1.1.4.tgz#cfc86ccd5dc5a52fa80489111c6920c457e2d98b"
 
@@ -1944,7 +1962,7 @@ lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "http://registry.npm.taobao.org/lodash.isarray/download/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
 
-lodash.keys@^3.0.0:
+lodash.keys@^3.0.0, lodash.keys@^3.1.2:
   version "3.1.2"
   resolved "http://registry.npm.taobao.org/lodash.keys/download/lodash.keys-3.1.2.tgz#4dbc0472b156be50a0b286855d1bd0b0c656098a"
   dependencies:
@@ -2019,6 +2037,14 @@ makeerror@1.0.x:
   resolved "http://registry.npm.taobao.org/makeerror/download/makeerror-1.0.11.tgz#e01a5c9109f2af79660e4e8b9587790184f5a96c"
   dependencies:
     tmpl "1.0.x"
+
+md5@2.2.1:
+  version "2.2.1"
+  resolved "http://registry.npm.taobao.org/md5/download/md5-2.2.1.tgz#53ab38d5fe3c8891ba465329ea23fac0540126f9"
+  dependencies:
+    charenc "~0.0.1"
+    crypt "~0.0.1"
+    is-buffer "~1.1.1"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -2109,7 +2135,7 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moment@2.x.x:
+moment@2.17.1, moment@2.x.x:
   version "2.17.1"
   resolved "http://registry.npm.taobao.org/moment/download/moment-2.17.1.tgz#fed9506063f36b10f066c8b59a144d7faebe1d82"
 
@@ -2428,6 +2454,63 @@ react-native-blur@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/react-native-blur/download/react-native-blur-2.0.0.tgz#284b3abfb42c2d90924aa15f494ccb88d6055342"
 
+react-native-communications@2.1.1:
+  version "2.1.1"
+  resolved "http://registry.npm.taobao.org/react-native-communications/download/react-native-communications-2.1.1.tgz#ff6f917c305e6d3fa935a89908aea5dc39b247d4"
+
+react-native-gifted-chat@^0.1.4:
+  version "0.1.4"
+  resolved "http://registry.npm.taobao.org/react-native-gifted-chat/download/react-native-gifted-chat-0.1.4.tgz#aa65528b05800454daeb5868d5ca50f3b6b50c68"
+  dependencies:
+    "@expo/react-native-action-sheet" "0.3.0"
+    md5 "2.2.1"
+    moment "2.17.1"
+    react-native-communications "2.1.1"
+    react-native-invertible-scroll-view "1.0.0"
+    react-native-lightbox oblador/react-native-lightbox#c84a8543d4511fe6a44c3d7820747c9c1bddd875
+    react-native-parsed-text "0.0.16"
+    shallowequal "0.2.2"
+    uuid "3.0.1"
+
+react-native-grid-component@^1.0.6:
+  version "1.0.6"
+  resolved "http://registry.npm.taobao.org/react-native-grid-component/download/react-native-grid-component-1.0.6.tgz#7dc696401d22c480dfa43f5118508880f169597d"
+
+react-native-invertible-scroll-view@1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/react-native-invertible-scroll-view/download/react-native-invertible-scroll-view-1.0.0.tgz#60ceb384dc950c34eba3a5aeda39f97cdc7d4e23"
+  dependencies:
+    react-clone-referenced-element "^1.0.1"
+    react-native-scrollable-mixin "^1.0.1"
+
+react-native-lightbox@^0.6.0:
+  version "0.6.0"
+  resolved "http://registry.npm.taobao.org/react-native-lightbox/download/react-native-lightbox-0.6.0.tgz#291701fb3dd0d7eaf88cebb5f105d7891bea5452"
+  dependencies:
+    react-timer-mixin "^0.13.3"
+
+"react-native-lightbox@github:oblador/react-native-lightbox#c84a8543d4511fe6a44c3d7820747c9c1bddd875":
+  version "0.6.0"
+  resolved "https://codeload.github.com/oblador/react-native-lightbox/tar.gz/c84a8543d4511fe6a44c3d7820747c9c1bddd875"
+  dependencies:
+    react-timer-mixin "^0.13.3"
+
+react-native-looped-carousel@^0.1.7:
+  version "0.1.7"
+  resolved "http://registry.npm.taobao.org/react-native-looped-carousel/download/react-native-looped-carousel-0.1.7.tgz#9e81aec732039250568e367383d0bd70ba4173e9"
+
+react-native-navbar@^1.7.1:
+  version "1.7.1"
+  resolved "http://registry.npm.taobao.org/react-native-navbar/download/react-native-navbar-1.7.1.tgz#de0e6f8c2156c7e984bb43c76732bd2437b7df0f"
+
+react-native-parsed-text@0.0.16:
+  version "0.0.16"
+  resolved "http://registry.npm.taobao.org/react-native-parsed-text/download/react-native-parsed-text-0.0.16.tgz#788f6a51c3e2c224ad89101cc3d63f5993d37747"
+
+react-native-scrollable-mixin@^1.0.1:
+  version "1.0.1"
+  resolved "http://registry.npm.taobao.org/react-native-scrollable-mixin/download/react-native-scrollable-mixin-1.0.1.tgz#34a32167b64248594154fd0d6a8b03f22740548e"
+
 react-native@^0.44.0:
   version "0.44.0"
   resolved "http://registry.npm.taobao.org/react-native/download/react-native-0.44.0.tgz#06427a30053f2d555c60fe0b9afcc6c778db09de"
@@ -2521,7 +2604,7 @@ react-proxy@^1.1.7:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
 
-react-timer-mixin@^0.13.2:
+react-timer-mixin@^0.13.2, react-timer-mixin@^0.13.3:
   version "0.13.3"
   resolved "http://registry.npm.taobao.org/react-timer-mixin/download/react-timer-mixin-0.13.3.tgz#0da8b9f807ec07dc3e854d082c737c65605b3d22"
 
@@ -2839,6 +2922,12 @@ set-blocking@^2.0.0:
 setimmediate@^1.0.5:
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/setimmediate/download/setimmediate-1.0.5.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
+
+shallowequal@0.2.2:
+  version "0.2.2"
+  resolved "http://registry.npm.taobao.org/shallowequal/download/shallowequal-0.2.2.tgz#1e32fd5bcab6ad688a4812cb0cc04efc75c7014e"
+  dependencies:
+    lodash.keys "^3.1.2"
 
 shell-quote@1.6.1, shell-quote@^1.6.1:
   version "1.6.1"
