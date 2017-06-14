@@ -31,6 +31,7 @@ export default class ChatList extends Component {
   }
   
   sendMessage = (messages = []) => {
+    alert('Send Message');
     this.setState((previousState) => (
       {
         messages: GiftedChat.append(previousState.messages, messages) 
@@ -48,6 +49,7 @@ export default class ChatList extends Component {
           user={{
             _id: 1,
           }}
+          renderAvatarOnTop
           messages={this.state.messages}
           onSend={() => this.sendMessage()}
         />
