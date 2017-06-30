@@ -46,3 +46,5 @@ const ListScreen = ({navigate, choices, flickrSearch}) => (
     {choices.map(choice => <Choice name={choice} key={choice} navigate={navigate} flickrSearch={flickrSearch} />)}
   </View>
 )
+
+export default ListScreen;
