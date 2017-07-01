@@ -2550,9 +2550,11 @@ react-devtools-core@^2.1.8:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-blur@^3.1.1:
-  version "3.1.1"
-  resolved "http://registry.npm.taobao.org/react-native-blur/download/react-native-blur-3.1.1.tgz#a0e04894af9280f5e6050766d2892a1476f5ec7e"
+react-native-blur@^3.1.2:
+  version "3.1.2"
+  resolved "http://registry.npm.taobao.org/react-native-blur/download/react-native-blur-3.1.2.tgz#82492a4db1d99aaa61956bbabc50a98930974e6d"
+  dependencies:
+    prop-types "^15.5.10"
 
 react-native-communications@2.1.1:
   version "2.1.1"
