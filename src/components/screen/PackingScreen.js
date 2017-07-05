@@ -14,21 +14,21 @@ const PackingScreen = TabNavigator({
     screen: PackingList,
     navigationOptions: {
       tabBarLabel: 'Toiletries',
-      tabBarIcon: tabBarIcon(require('./images/toothbrush.png'))
+      tabBarIcon: tabBarIcon(require('../../images/toothbrush.png'))
     }
   },
   Clothes: {
     screen: PackingList,
     navigationOptions: {
       tabBarLabel: 'Clothes',
-      tabBarIcon: tabBarIcon(require('./images/shirt.png'))
+      tabBarIcon: tabBarIcon(require('../../images/shirt.png'))
     }
   },
   Gear: {
     screen: PackingList,
     navigationOptions: {
       tabBarLabel: 'Gear',
-      tabBarIcon: tabBarIcon(require('./images/headphones.png'))
+      tabBarIcon: tabBarIcon(require('../../images/headphones.png'))
     }
   }
 }, {
